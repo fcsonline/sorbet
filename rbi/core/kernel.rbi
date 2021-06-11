@@ -1805,9 +1805,9 @@ module Kernel
   # important information regarding multi-byte characters.
   sig do
     params(
-        arg0: Integer,
+        arg0: T.any(String, Integer),
     )
-    .returns(Integer)
+    .returns(T.any(String, Integer))
   end
   def putc(arg0); end
 
